@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_above="@+id/cardview"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        tools:ignore="NotSibling">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:padding="4dp"
+
+        >
+
+        <ImageView
+            android:background="@drawable/curvebg"
+            android:layout_margin="4dp"
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img6"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:background="@drawable/curvebg"
+            android:layout_margin="2dp"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img7"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:background="@drawable/curvebg"
+            android:layout_margin="4dp"
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img9"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:background="@drawable/curvebg"
+            android:layout_margin="4dp"
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img13"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:background="@drawable/curvebg"
+            android:layout_margin="4dp"
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img14"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:background="@drawable/curvebg"
+            android:layout_margin="4dp"
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img15"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:background="@drawable/curvebg"
+            android:layout_margin="4dp"
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img16"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:background="@drawable/curvebg"
+            android:layout_margin="4dp"
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img17"
+            android:scaleType="fitXY"/>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:id="@+id/cardview"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5.0dip"
+        android:padding="0.0dip"
+        app:cardCornerRadius="6.0dip"
+        app:cardElevation="6.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:orientation="horizontal"
+            android:paddingTop="5.0dip"
+            android:weightSum="4.0">
+
+            <LinearLayout
+                android:id="@+id/home_layout"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_gravity="center"
+                    android:src="@drawable/home" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3.0dip"
+                    android:paddingBottom="5.0dip"
+                    android:text="Home"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="#ff00a3d6"
+                    android:textSize="12.0dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ff00a3d6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/registraion_layout"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_gravity="center"
+                    android:src="@drawable/registraion" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3.0dip"
+                    android:text="Registration"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="#ff666666"
+                    android:textSize="12.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gallery_layout"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_gravity="center"
+                    android:src="@drawable/gallery" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3.0dip"
+                    android:text="Gallery"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="#ff666666"
+                    android:textSize="12.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3.0dip"
+                    android:text="Imp Contact"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="#ff666666"
+                    android:textSize="12.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

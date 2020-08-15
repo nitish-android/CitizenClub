@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.tanzible.sampleproject.ClubHistory"
+    android:orientation="vertical">
+
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        tools:ignore="NotSibling"
+        android:layout_above="@+id/cardview"
+        android:layout_marginTop="?attr/actionBarSize">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:orientation="vertical"
+        android:layout_margin="12dp"
+        android:paddingBottom="30dp"
+
+        >
+
+        <ImageView
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/club_history"
+            android:scaleType="fitXY"
+            android:background="@drawable/recyclerview_bg"/>
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Citizen's Club is celebrating its Golden Jubilee (1958-2008 with pomp and fanfare in four chapters spanning the whole year in 2008. When Citizen's Club is crossing a historical milestones, it is only natural for us today to look back and pay our gratitute and respect to those
+who pioneered the establishment of this club."
+            android:fontFamily="@font/lato_bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="Like all human endeavours which latter bore fruit, Citizen's Club began very humbly.In 1958,it was known as the Soibam Leikai Wangkhei Khunou Associated New Club and it was better known by its acyronym as SWAN Club.Late Wangkheinmayum Iboyaima and Late Oinam Ibochouba were the first president and secretary of Club respectively,"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="We are told that other pioneering members of this club were late Soibam Meghachandra,LAte Ningthoujham Tomba,Soibam Ibomacha,Late Mangsatabam Kullachandra,Nongthombam Mobi, Konjengbam Saratchandra, Rajkumar Thoiren, Rajkumar Khelendra."
+            android:textSize="20sp"
+            android:paddingBottom="4dp"/>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5.0dip"
+        android:padding="0.0dip"
+        app:cardCornerRadius="6.0dip"
+        app:cardElevation="6.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:orientation="horizontal"
+            android:paddingTop="5.0dip"
+            android:weightSum="4.0">
+
+            <LinearLayout
+                android:id="@+id/home_layout"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_gravity="center"
+                    android:src="@drawable/home" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3.0dip"
+                    android:paddingBottom="5.0dip"
+                    android:text="Home"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="#ff00a3d6"
+                    android:textSize="12.0dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ff00a3d6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/registraion_layout"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_gravity="center"
+                    android:src="@drawable/registraion" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3.0dip"
+                    android:text="Registration"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="#ff666666"
+                    android:textSize="12.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gallery_layout"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_gravity="center"
+                    android:src="@drawable/gallery" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3.0dip"
+                    android:text="Gallery"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="#ff666666"
+                    android:textSize="12.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3.0dip"
+                    android:text="Imp Contact"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="#ff666666"
+                    android:textSize="12.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

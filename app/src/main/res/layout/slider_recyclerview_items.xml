@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:elevation="8dp"
+    android:background="@drawable/recyclerview_bg"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:layout_height="225dp">
+
+    <ImageView
+        android:background="@drawable/curvebg"
+        android:padding="2dp"
+        android:scaleType="fitXY"
+        android:id="@+id/offer_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/image1"
+        />
+
+</LinearLayout>

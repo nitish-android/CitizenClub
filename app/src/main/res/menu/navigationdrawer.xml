@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:title="@string/home"
+
+            ></item>
+        <item
+            android:id="@+id/club_history"
+            android:title="@string/club_history"
+
+            ></item>
+
+
+        <item
+            android:id="@+id/member_list"
+            android:title="@string/member_list"
+
+            ></item>
+        <item
+            android:id="@+id/event_list"
+            android:title="@string/event_list"/>
+        <item
+            android:id="@+id/your_locality"
+            android:title="@string/leikai_khangminnashi"/>
+        <item
+            android:id="@+id/donation_list"
+            android:title="@string/donation_list"
+
+            ></item>
+
+        <item
+            android:id="@+id/feedback"
+            android:title="@string/fedback"
+
+            ></item>
+        <item
+            android:id="@+id/privacy_policy"
+            android:title="@string/privacy_policy"
+
+            ></item>
+
+    </group>
+
+</menu>

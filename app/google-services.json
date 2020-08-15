@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "367805750973",
+    "firebase_url": "https://citizen-club.firebaseio.com",
+    "project_id": "citizen-club",
+    "storage_bucket": "citizen-club.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367805750973:android:52ba82ff468e673200a1d4",
+        "android_client_info": {
+          "package_name": "com.tanzible.citizenclub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367805750973-5vc7euthjijp19u29vqsk5dirrndiess.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tanzible.citizenclub",
+            "certificate_hash": "7ae685f77c69654479ce11a163c04feb3bb72b05"
+          }
+        },
+        {
+          "client_id": "367805750973-78tmjnea427v7k7uabi7p9ptd6ic7tmh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl-pSa5hGZmAp9BbJyOoFn0TVppJOQclo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367805750973-78tmjnea427v7k7uabi7p9ptd6ic7tmh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
